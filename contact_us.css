@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #ffc26c;
+}
+
+.contact-message {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    max-width: 400px;
+}
+
+.contact-message p {
+    margin: 0; /* Adicione esta linha para remover a margem padrão do parágrafo */
+}

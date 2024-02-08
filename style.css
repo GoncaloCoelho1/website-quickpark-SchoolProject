@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #ffc26c;
+  
+}
+
+.menu-principal {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.texto-principal {
+  font-size: 24px; /* Tamanho de letra maior */
+  margin: 0; /* Remova margens padrão */
+  text-align: center; /* Centralize o texto */
+  margin-left: 35px;
+}
+.contact-us{
+  padding: 10px;
+  color: #fff;
+}
+
+.botao_login {
+  background-color: #060f18;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fade{
+  background: linear-gradient(to bottom, #333, #ffc26c);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+

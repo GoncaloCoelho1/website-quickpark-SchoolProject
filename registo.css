@@ -1,0 +1,61 @@
+.registo{
+    text-align: center;
+    justify-content: center;
+}
+  
+.registo {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+  
+.registo label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+  
+.registo input[type="text"],
+.registo input[type="email"],
+.registo input[type="password"] {
+    width: 94%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+  
+.registo button {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+  
+.registo button:hover {
+    background-color: #ffc26c;
+}
+  
+.registo a {
+    text-decoration: none;
+    color: #007bff;
+}
+  
+.registo a:hover {
+    text-decoration: underline;
+}

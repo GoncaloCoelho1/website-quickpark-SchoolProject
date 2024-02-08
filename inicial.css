@@ -1,0 +1,196 @@
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.image {
+    width: 55%;
+    height: 100%;
+    background: url('imagens/parking.jpg');
+    justify-content: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-area: IE;
+}
+
+.info-esquerda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 400px; 
+    height: 100px; 
+    margin: 25px;
+    margin-top: 17%; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 400px;
+    margin-top: 160px;
+    grid-area: IE;
+}
+
+.texto{
+    font-family: Open Sans; 
+    color: white; 
+    font-size: 20px; 
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+.botao {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+    margin-left: 10px;
+}
+
+.background-color {
+    width: 45%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #333, #ffc26c);
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+    grid-area: BG;
+}
+
+.caixa{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    position: fixed;
+    margin: 5% 5% 5% 45%;
+}
+
+.info-direita{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: ID;
+    grid-gap: 30px
+}
+
+#aparencia{
+    display: none; /* Inicia oculta */
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    transition: transform 0.5s ease-out;
+}
+#aparencia:target {
+    display: block;
+    transform: translateY(0);
+}
+
+/* Adiciona atraso usando a pseudo-classe :after */
+#aparencia:after {
+    content: "";
+    display: block;
+    height: 100px; /* Ajuste conforme necessário */
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .background-color{
+        display: none;
+    }
+
+    .image{
+        width: 100%;
+        height: 100vh;
+        background: url('imagens/parking.jpg');
+        justify-content: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .info-esquerda{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 400px;
+        margin-top: 45px;
+        margin-left: 60px;
+    }
+    .caixa{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+    .background-color{
+        display: none;
+    }
+
+    .image{
+        width: 100%;
+        height: 100vh;
+        background: url('imagens/parking.jpg');
+        justify-content: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .info-esquerda{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 200px;
+        margin: 0% 5% 5% 5%;
+    }
+    .caixa{
+        display: none;
+    }
+    .texto{
+        font-family: Open Sans; 
+        color: white; 
+        font-size: 10px; 
+        line-height: 1.5;
+        margin-left: 10px;
+    }
+    .botao {
+        background-color: orange;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 80px;
+        margin-left: 10px;
+    }
+}

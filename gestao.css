@@ -1,0 +1,298 @@
+#h1 {
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #333, #CEECF5);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    line-height: 25px;
+    margin-left: 20px;
+    margin: 1;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.logout {
+    float: right;
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+}
+
+.linha-divisoria-cima {
+    width: 100%;
+    border: 1px solid #000; /* Cor e estilo da linha divisória */
+    border-top: 3px solid #000; /* Cor e estilo da linha divisória */
+    margin: 0; /* Redefine a margem para evitar espaços indesejados */
+}
+
+.linha-divisoria-baixo {
+    width: 100%;
+    border: 1px solid #000; /* Cor e estilo da linha divisória */
+    border-top: 3px solid #000; /* Cor e estilo da linha divisória */
+    margin: 0; /* Redefine a margem para evitar espaços indesejados */
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.lista_topicos {
+    position: relative; 
+    padding: 10px; /* Espaçamento interno para evitar sobreposição com a linha divisória */
+    margin: 0 auto;
+
+}
+
+.conteudo-wrapper {
+    display: flex;
+    font-size: large;
+}
+
+.regi {
+    color: white;
+    background-color: orange;
+    border-radius: 15px;
+}
+
+.barra-de-pesquisa input[type="text"] {
+    width: 210px;
+    height: 25px;
+    border-radius: 15px;
+    padding-left: 10px; /* Ajuste o valor conforme necessário */
+}
+
+.barra-de-pesquisa button {
+    height: 30px;
+    border-radius: 20px; /* Ajuste o valor conforme necessário */
+}
+
+.caixa-conteudo {
+    width: 46%; /* A caixa ocupa metade da largura da página */
+    background-color: #b4c5bd; /* Cor de fundo da caixa */
+    border: 2px solid #333333; /* Borda da caixa */
+    border-radius: 15px; /* Raio das bordas arredondadas */
+    padding: 20px; /* Espaçamento interno da caixa */
+    box-shadow: 3px 3px 5px #58927b;
+    text-align: left;
+    background-image: url('nome da imagem de fundo'); /* Define o nome da imagem de fundo */
+    background-size: cover; /* Ajusta o tamanho da imagem de fundo */
+    position: relative
+}
+
+.caixa-conteudo-perfil {
+    background-color: #b4c5bd; /* Cor de fundo da caixa */
+    border: 2px solid #333333; /* Borda da caixa */
+    border-radius: 15px; /* Raio das bordas arredondadas */
+    padding: 20px; /* Espaçamento interno da caixa */
+    box-shadow: 3px 3px 5px #58927b;
+    text-align: left;
+    background-image: url('nome da imagem de fundo'); /* Define o nome da imagem de fundo */
+    background-size: cover; /* Ajusta o tamanho da imagem de fundo */
+    position: relative
+}
+
+.perfil-conteudo {
+    display: flex;
+    align-items: center;
+    width: 96%; /* Ajuste a largura conforme necessário */
+}
+
+/**/
+.conteudo-esquerda {
+    width: 50%; /* Define a largura da coluna da esquerda */
+    float: left; /* Faz com que a coluna flutue à esquerda */
+}
+
+/* Estilize a coluna da direita */
+.conteudo-direita {
+    margin-left: 30px;
+    width: 50%; /* Define a largura da coluna da direita */
+    float: right; /* Faz com que a coluna flutue à esquerda */
+}
+
+.conteudo-matriculas {
+    text-align: center;
+}
+
+.conteudo-direita .acima-centralizado {
+    padding: 10%; /* Ajuste a quantidade de preenchimento conforme necessário */
+    text-align: center;
+}
+
+.table-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.linha-horizontal {
+    width: 100%; /* A linha horizontal se estenderá por toda a largura da coluna da direita */
+    background-color: #333; /* Cor da linha horizontal */
+    height: 2px; /* Altura da linha horizontal */
+}
+/**/
+
+td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+    
+    thead {
+        position: sticky;
+        top: 0;
+        background-color: #000000;
+    }
+    
+    #historico_secoes {
+        border-radius: 15px;
+        margin-left: 20px; /* Adicione a margem à esquerda do select */
+        width: 40%;
+        height: 40px;
+    }
+    
+    .historico-table, th, td{
+        border-collapse: collapse;
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+.perfil-conteudo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px dashed #333;
+}
+
+.imagem-estacionamento {
+    width: 49%;
+    height: 97%;
+    position: absolute;
+    top: 0;     
+    right: 0;   
+    z-index: -1; /* Coloque a imagem na frente da linha divisória */
+}
+
+.perfil h2 {
+    display: inline;
+    margin-left: 10px;
+}
+
+.dados {
+    color: rgb(93, 93, 93);
+    margin-left: 20%; /* ou ajuste conforme necessário */
+}
+
+.caixa-conteudo-veiculo {
+    background-color: #b4c5bd; /* Cor de fundo da caixa */
+    border: 2px solid #333333; /* Borda da caixa */
+    border-radius: 15px; /* Raio das bordas arredondadas */
+    padding: 20px; /* Espaçamento interno da caixa */
+    box-shadow: 3px 3px 5px #58927b;
+    text-align: left;
+    background-image: url('nome da imagem de fundo'); /* Define o nome da imagem de fundo */
+    background-size: cover; /* Ajusta o tamanho da imagem de fundo */
+    position: relative
+}
+
+.veiculo-conteudo {
+    display: flex;
+    align-items: center;
+    width: 96%; /* Ajuste a largura conforme necessário */
+}
+
+.veiculo-conteudo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px dashed #333;
+}
+
+#matriculas {
+    border-radius: 15px;
+    margin-left: 30px; /* Adicione a margem à esquerda do select */
+    width: 26%;
+    height: 40px;
+}
+
+.registar_pagamento {
+    width: 85%; /* Defina a largura desejada em pixels */
+    margin-top: 30px;
+    margin-left: 10%;
+    background-color:#6bb884;
+    color: aquamarine;
+}
+
+.registar_pagamento:active {
+    background-color: #58946b/* Nova cor de fundo quando pressionado */
+}
+
+.titulo-container {
+    display: flex;
+    margin-left: 8px;
+    margin-bottom: -17px;
+}
+
+.pagamento-titulo {
+    margin-left: 44%; /* Ou qualquer outro valor que você preferir */
+}
+
+.imagem-estacionamento {
+    width: 49%;
+    height: 97%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.imagem-estacionamento img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.legenda-estacionamento {
+    width: 50%;
+    height: 97%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+}
